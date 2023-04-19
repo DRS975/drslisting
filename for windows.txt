@@ -1,0 +1,53 @@
+To create a similar tool for CMD on Windows, you can use the same Python code and package it as an executable using tools like PyInstaller, cx_Freeze, or py2exe.
+
+These tools allow you to package your Python code and its dependencies into a standalone executable that can be run on Windows machines without requiring Python or any external dependencies to be installed.
+
+Here's a high-level overview of the steps involved:
+
+• Write the Python code for the command line tool that organizes and lists files.
+
+• Install the PyInstaller package or another packaging tool of your choice.
+
+• Use the packaging tool to create an executable from your Python code.
+
+For PyInstaller, you can use the following command:
+
+cssCopy code
+
+pyinstaller --onefile your_script_name.py 
+
+• Once the packaging is done, you will find an executable file in the dist folder.
+
+• Copy the executable to any directory of your choice, and you can now run the command-line tool in the CMD terminal
+
+for cmd
+
+Here are the general steps to create an executable from your Python code using PyInstaller:
+
+• Install PyInstaller: You can install PyInstaller by running the following command in your terminal/command prompt:
+
+Copy code
+
+pip install pyinstaller 
+
+• Navigate to the directory containing your Python code in the terminal/command prompt.
+
+• Create a spec file for your Python code: You can create a spec file by running the following command in your terminal/command prompt:
+
+phpCopy code
+
+pyinstaller --name=<name-of-executable> <name-of-python-script>.py 
+
+This will create a spec file named <name-of-python-script>.spec.
+
+• Edit the spec file: Open the spec file in a text editor and edit the options as needed. You can customize the options to include additional data files, modules, and more.
+
+• Create the executable: You can create the executable by running the following command in your terminal/command prompt:
+
+phpCopy code
+
+pyinstaller <name-of-python-script>.spec 
+
+This will create a directory named dist containing the executable file.
+
+Note that the specific commands and options may differ depending on the packaging tool you choose to use. Be sure to refer to the documentation for your chosen tool for detailed instructions.

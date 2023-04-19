@@ -1,0 +1,8 @@
+Python code that organizes files in a specified directory and displays them with a more GUI-like listing:
+
+The code uses the os module to list the files in the specified directory, group them by file type, create directories for each file type, and move the files into their corresponding directories. It then uses a simple print statement to display the files in a more GUI-like listing, with each file's name and size displayed in columns.
+
+To run this code, save it to a Python file as drslisting.py and run it from the command line using the python command:
+
+to run:
+python drslisting.py
